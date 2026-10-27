@@ -1,27 +1,33 @@
 # ai-slop-checks
 
-Checklists and Claude Code skills for catching the patterns that make copy and web design read as generated. They work best for freelancers, solo marketers, and small agencies who use AI in client work and need every deliverable to sound like a real person who knows the subject.
+Checklists and skills for Claude Code and Codex for catching the patterns that make copy and web design read as generated. They work best for freelancers, solo marketers, and small agencies who use AI in client work and need every deliverable to sound like a real person who knows the subject.
 
 ## What's here
 
 | Path | What it is |
 |---|---|
-| `copy/ai-copy-tells/` | A Claude Code skill that flags AI writing patterns in marketing copy, quotes each sentence, and rewrites it. |
+| `copy/ai-copy-tells/` | A skill for Claude Code or Codex that flags AI writing patterns in marketing copy, quotes each sentence, and rewrites it. |
 | `copy/banned-ai-copy-patterns.md` | The same patterns as a plain checklist, with a prompt you can use in ChatGPT or Claude chat. |
 | `content/ai-content-prepublish-checklist.md` | A gate for AI-assisted blog posts and landing pages before they go live, based on what gets scaled AI content demoted. |
-| `design/ai-design-tells/` | A Claude Code skill for spotting generic, templated design and fixing it without throwing out the brand. |
+| `design/ai-design-tells/` | A skill for Claude Code or Codex for spotting generic, templated design and fixing it without throwing out the brand. |
 
 ## Install the skills
 
-Copy the skill folders into your Claude Code skills directory:
+Both skills work in Claude Code and in Codex. Copy the skill folders into whichever you use:
 
 ```bash
 git clone https://github.com/Boston617Delta/ai-slop-checks.git
+
+# Claude Code
 mkdir -p ~/.claude/skills
 cp -R ai-slop-checks/copy/ai-copy-tells ai-slop-checks/design/ai-design-tells ~/.claude/skills/
+
+# Codex
+mkdir -p ~/.codex/skills
+cp -R ai-slop-checks/copy/ai-copy-tells ai-slop-checks/design/ai-design-tells ~/.codex/skills/
 ```
 
-Then ask Claude Code to "check this draft for AI copy tells" or "review this page for AI design tells." The checklists need no install.
+Then ask it to "check this draft for AI copy tells" or "review this page for AI design tells." The checklists need no install, and the copy checklist includes a prompt for ChatGPT or Claude chat.
 
 ## What these checks don't do
 
