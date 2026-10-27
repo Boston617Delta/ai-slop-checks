@@ -1,6 +1,6 @@
 # ai-slop-checks
 
-Checklists and skills for Claude Code and Codex for catching the patterns that make copy and web design read as generated. They work best for freelancers, solo marketers, and small agencies who use AI in client work and need every deliverable to sound like a real person who knows the subject.
+Checklists, plus skills for Claude Code and Codex, that catch the patterns that make copy and web design read as generated. They work best for freelancers, solo marketers, and small agencies who use AI in client work and need every deliverable to sound like a real person who knows the subject.
 
 ## What's here
 
