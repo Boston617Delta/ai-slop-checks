@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Copy Tells"
+  short_description: "Flag AI writing patterns in marketing copy and rewrite them"
+  default_prompt: "Use $ai-copy-tells to check this draft, quote each flagged sentence, and suggest a rewrite that keeps my meaning."
