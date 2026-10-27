@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Design Tells"
+  short_description: "Spot generic design patterns and make intentional fixes"
+  default_prompt: "Use $ai-design-tells to review this interface and recommend specific fixes while preserving its brand and useful patterns."

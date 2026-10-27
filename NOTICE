@@ -1,0 +1,11 @@
+ai-slop-checks
+Copyright (c) 2026 Danielle Furmenek
+
+design/ai-design-tells/references/impeccable-slop.md and
+design/ai-design-tells/references/impeccable-slop-inventory.json adapt rule
+topics and stable identifiers from Impeccable (https://github.com/pbakaus/impeccable),
+Copyright Paul Bakaus, licensed under the Apache License, Version 2.0.
+These files were modified: descriptions were rewritten as review checks with
+original repair language, and custom checks and defaults were added.
+A copy of the Apache License 2.0 is in
+design/ai-design-tells/references/LICENSE-impeccable-Apache-2.0.txt.

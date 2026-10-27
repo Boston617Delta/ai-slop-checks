@@ -1,0 +1,421 @@
+{
+  "source": "https://impeccable.style/slop/",
+  "retrieved": "2026-10-09",
+  "rules": [
+    {
+      "id": "design-system-font",
+      "layer": "cli",
+      "category": "Your design system",
+      "title": "Font outside DESIGN.md"
+    },
+    {
+      "id": "design-system-color",
+      "layer": "cli",
+      "category": "Your design system",
+      "title": "Color outside DESIGN.md"
+    },
+    {
+      "id": "design-system-radius",
+      "layer": "cli",
+      "category": "Your design system",
+      "title": "Radius outside DESIGN.md"
+    },
+    {
+      "id": "design-system-font-size",
+      "layer": "cli",
+      "category": "Your design system",
+      "title": "Font size outside DESIGN.md"
+    },
+    {
+      "id": "codex-grid-background",
+      "layer": "cli",
+      "category": "Visual Details",
+      "title": "Decorative grid-line background"
+    },
+    {
+      "id": "border-accent-on-rounded",
+      "layer": "cli",
+      "category": "Visual Details",
+      "title": "Border accent on rounded element"
+    },
+    {
+      "id": "glassmorphism",
+      "layer": "llm",
+      "category": "Visual Details",
+      "title": "Glassmorphism everywhere"
+    },
+    {
+      "id": "side-tab",
+      "layer": "cli",
+      "category": "Visual Details",
+      "title": "Side-tab accent border"
+    },
+    {
+      "id": "gpt-thin-border-wide-shadow",
+      "layer": "cli",
+      "category": "Visual Details",
+      "title": "Hairline border with wide shadow"
+    },
+    {
+      "id": "repeating-stripes-gradient",
+      "layer": "cli",
+      "category": "Visual Details",
+      "title": "Repeating-gradient stripes"
+    },
+    {
+      "id": "over-round",
+      "layer": "llm",
+      "category": "Visual Details",
+      "title": "Extreme border-radius on cards"
+    },
+    {
+      "id": "sketchy-svg",
+      "layer": "llm",
+      "category": "Visual Details",
+      "title": "Rough SVG illustrations"
+    },
+    {
+      "id": "kicker-above-heading",
+      "layer": "cli",
+      "category": "Typography",
+      "title": "Label above a heading"
+    },
+    {
+      "id": "undersized-ui-text",
+      "layer": "cli",
+      "category": "Typography",
+      "title": "Tiny interface text"
+    },
+    {
+      "id": "flat-type-hierarchy",
+      "layer": "cli",
+      "category": "Typography",
+      "title": "Flat type hierarchy"
+    },
+    {
+      "id": "icon-tile-stack",
+      "layer": "cli",
+      "category": "Typography",
+      "title": "Icon tile stacked above heading"
+    },
+    {
+      "id": "italic-serif-display",
+      "layer": "cli",
+      "category": "Typography",
+      "title": "Italic serif display headline"
+    },
+    {
+      "id": "hero-eyebrow-chip",
+      "layer": "cli",
+      "category": "Typography",
+      "title": "Badge above the main headline"
+    },
+    {
+      "id": "oversized-h1",
+      "layer": "cli",
+      "category": "Typography",
+      "title": "Oversized hero headline"
+    },
+    {
+      "id": "extreme-negative-tracking",
+      "layer": "cli",
+      "category": "Typography",
+      "title": "Crushed letter spacing"
+    },
+    {
+      "id": "overused-font",
+      "layer": "cli",
+      "category": "Typography",
+      "title": "Overused font"
+    },
+    {
+      "id": "single-font",
+      "layer": "llm",
+      "category": "Typography",
+      "title": "Single font for everything"
+    },
+    {
+      "id": "all-caps-body",
+      "layer": "cli",
+      "category": "Typography",
+      "title": "All-caps body text"
+    },
+    {
+      "id": "radial-halo",
+      "layer": "cli",
+      "category": "Color & Contrast",
+      "title": "Radial-gradient background halo"
+    },
+    {
+      "id": "radial-spotlight-glow",
+      "layer": "cli",
+      "category": "Color & Contrast",
+      "title": "Soft spotlight behind content"
+    },
+    {
+      "id": "ai-color-palette",
+      "layer": "cli",
+      "category": "Color & Contrast",
+      "title": "AI color palette"
+    },
+    {
+      "id": "dark-glow",
+      "layer": "cli",
+      "category": "Color & Contrast",
+      "title": "Dark mode with glowing accents"
+    },
+    {
+      "id": "gradient-text",
+      "layer": "cli",
+      "category": "Color & Contrast",
+      "title": "Gradient text"
+    },
+    {
+      "id": "gray-on-color",
+      "layer": "cli",
+      "category": "Color & Contrast",
+      "title": "Gray text on colored background"
+    },
+    {
+      "id": "cream-palette",
+      "layer": "cli",
+      "category": "Color & Contrast",
+      "title": "Cream / beige palette"
+    },
+    {
+      "id": "numbered-section-labels",
+      "layer": "cli",
+      "category": "Layout & Space",
+      "title": "Tiny numbered section labels"
+    },
+    {
+      "id": "edge-flush-cards",
+      "layer": "browser",
+      "category": "Layout & Space",
+      "title": "Cards flush against the scroller edge"
+    },
+    {
+      "id": "text-occlusion",
+      "layer": "browser",
+      "category": "Layout & Space",
+      "title": "Text covered by another element"
+    },
+    {
+      "id": "first-viewport-column-overflow",
+      "layer": "browser",
+      "category": "Layout & Space",
+      "title": "Unbalanced opening columns"
+    },
+    {
+      "id": "heading-rhythm",
+      "layer": "browser",
+      "category": "Layout & Space",
+      "title": "Heading closer to the previous section"
+    },
+    {
+      "id": "hero-metric-layout",
+      "layer": "llm",
+      "category": "Layout & Space",
+      "title": "Hero metric layout"
+    },
+    {
+      "id": "identical-card-grids",
+      "layer": "llm",
+      "category": "Layout & Space",
+      "title": "Identical card grids"
+    },
+    {
+      "id": "monotonous-spacing",
+      "layer": "cli",
+      "category": "Layout & Space",
+      "title": "Monotonous spacing"
+    },
+    {
+      "id": "nested-cards",
+      "layer": "cli",
+      "category": "Layout & Space",
+      "title": "Nested cards"
+    },
+    {
+      "id": "line-length",
+      "layer": "browser",
+      "category": "Layout & Space",
+      "title": "Line length too long"
+    },
+    {
+      "id": "text-overflow",
+      "layer": "browser",
+      "category": "Layout & Space",
+      "title": "Content overflowing its container"
+    },
+    {
+      "id": "clipped-overflow-container",
+      "layer": "browser",
+      "category": "Layout & Space",
+      "title": "Clipped menus and popovers"
+    },
+    {
+      "id": "pulsing-dot",
+      "layer": "cli",
+      "category": "Motion",
+      "title": "Pulsing status dot"
+    },
+    {
+      "id": "blinking-cursor",
+      "layer": "browser",
+      "category": "Motion",
+      "title": "Decorative blinking cursor"
+    },
+    {
+      "id": "marquee",
+      "layer": "cli",
+      "category": "Motion",
+      "title": "Auto-scrolling marquee"
+    },
+    {
+      "id": "bounce-easing",
+      "layer": "cli",
+      "category": "Motion",
+      "title": "Bounce or elastic easing"
+    },
+    {
+      "id": "layout-transition",
+      "layer": "cli",
+      "category": "Motion",
+      "title": "Animation that changes layout"
+    },
+    {
+      "id": "image-hover-transform",
+      "layer": "cli",
+      "category": "Motion",
+      "title": "Images that move on hover"
+    },
+    {
+      "id": "repeated-container-text",
+      "layer": "cli",
+      "category": "Copy",
+      "title": "Same text repeated inside one container"
+    },
+    {
+      "id": "em-dash-overuse",
+      "layer": "cli",
+      "category": "Copy",
+      "title": "Em-dash overuse"
+    },
+    {
+      "id": "marketing-buzzword",
+      "layer": "cli",
+      "category": "Copy",
+      "title": "Generic marketing claims"
+    },
+    {
+      "id": "aphoristic-cadence",
+      "layer": "cli",
+      "category": "Copy",
+      "title": "Forced contrast"
+    },
+    {
+      "id": "theater-slop-phrase",
+      "layer": "cli",
+      "category": "Copy",
+      "title": "Calling things \u201ctheater\u201d"
+    },
+    {
+      "id": "shape-assembled-illustration",
+      "layer": "cli",
+      "category": "Imagery",
+      "title": "Placeholder-style illustrations"
+    },
+    {
+      "id": "organic-clip-path",
+      "layer": "cli",
+      "category": "Imagery",
+      "title": "Jagged image masks"
+    },
+    {
+      "id": "buried-raster",
+      "layer": "cli",
+      "category": "Imagery",
+      "title": "Images hidden under overlays"
+    },
+    {
+      "id": "broken-image",
+      "layer": "cli",
+      "category": "Imagery",
+      "title": "Broken or placeholder image"
+    },
+    {
+      "id": "script-error",
+      "layer": "browser",
+      "category": "General quality",
+      "title": "JavaScript errors on load"
+    },
+    {
+      "id": "content-hidden-at-rest",
+      "layer": "browser",
+      "category": "General quality",
+      "title": "Content stuck waiting to appear"
+    },
+    {
+      "id": "cramped-padding",
+      "layer": "browser",
+      "category": "General quality",
+      "title": "Cramped padding"
+    },
+    {
+      "id": "body-text-viewport-edge",
+      "layer": "browser",
+      "category": "General quality",
+      "title": "Body text touching the page edge"
+    },
+    {
+      "id": "justified-text",
+      "layer": "cli",
+      "category": "General quality",
+      "title": "Justified text"
+    },
+    {
+      "id": "low-contrast",
+      "layer": "cli",
+      "category": "General quality",
+      "title": "Low-contrast text"
+    },
+    {
+      "id": "skipped-heading",
+      "layer": "cli",
+      "category": "General quality",
+      "title": "Skipped heading level"
+    },
+    {
+      "id": "tight-leading",
+      "layer": "cli",
+      "category": "General quality",
+      "title": "Tight line height"
+    },
+    {
+      "id": "tiny-text",
+      "layer": "cli",
+      "category": "General quality",
+      "title": "Tiny body text"
+    },
+    {
+      "id": "wide-tracking",
+      "layer": "cli",
+      "category": "General quality",
+      "title": "Wide letter spacing on body text"
+    }
+  ],
+  "examples": [
+    "/antipattern-examples/purple-gradients.html",
+    "/antipattern-examples/lazy-cool.html",
+    "/antipattern-examples/lazy-impact.html",
+    "/antipattern-examples/thick-border-cards.html",
+    "/antipattern-examples/cardocalypse.html",
+    "/antipattern-examples/layout-templates.html",
+    "/antipattern-examples/inter-everywhere.html",
+    "/antipattern-examples/massive-icons.html",
+    "/antipattern-examples/bad-contrast.html",
+    "/antipattern-examples/redundant-ux-writing.html",
+    "/antipattern-examples/modal-abuse.html"
+  ]
+}
