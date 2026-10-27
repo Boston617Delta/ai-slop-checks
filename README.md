@@ -29,9 +29,11 @@ None of them can tell whether a person or a model wrote something. They flag pat
 
 ## Credits
 
-The design skill's catalog adapts rule topics and identifiers from [Impeccable](https://github.com/pbakaus/impeccable) by Paul Bakaus, licensed under the Apache License 2.0. The repair language, defaults, and the open-ended ruled columns check were written for this repo, and the catalog text has been changed from the original. See `NOTICE` and `design/ai-design-tells/references/LICENSE-impeccable-Apache-2.0.txt`.
+The copy skill and the banned-patterns checklist are original to this repo, including the specific AI phrases and sentence patterns they flag.
 
-The pre-publish checklist builds on Lily Ray's Search Engine Journal article "It Works Until It Doesn't: AI Content Strategies That Backfire."
+The pre-publish checklist starts from the content strategies Lily Ray examined in her Search Engine Journal article "It Works Until It Doesn't: AI Content Strategies That Backfire," and adds its own checks: the AI phrases and sentence patterns to cut, a logo-swap test for originality, Google's guidance on reviewing AI content, and pacing for new pages.
+
+The design skill adds its own repair guidance, defaults, and the open-ended ruled columns check to a catalog of rule topics adapted from [Impeccable](https://github.com/pbakaus/impeccable) by Paul Bakaus (Apache License 2.0; see `NOTICE`).
 
 ## License
 
