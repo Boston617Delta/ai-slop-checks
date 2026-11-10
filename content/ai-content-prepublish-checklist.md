@@ -42,7 +42,7 @@ A gate for any AI-assisted blog post, landing page, or location page before it g
 
 ## Gate 5: Writing and site checks
 
-- [ ] No AI copy patterns. Run [banned-ai-copy-patterns.md](../copy/banned-ai-copy-patterns.md) or the `ai-copy-tells` skill.
+- [ ] No AI copy patterns. Run [banned-ai-copy-patterns.md](../copy/banned-ai-copy-patterns.md) or the `ai-slop-check` skill.
 - [ ] Canonical tag points to the right URL.
 - [ ] Internal links are in place, and the page doesn't compete with an existing page for the same query.
 

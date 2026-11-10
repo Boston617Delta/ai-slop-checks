@@ -1,6 +1,6 @@
 # Banned AI copy patterns: a checklist
 
-A plain version of the `ai-copy-tells` skill for anyone who doesn't use Claude Code. Paste it into ChatGPT or Claude along with your draft, or keep it next to your editor.
+A plain version of the `ai-slop-check` skill for anyone who doesn't use Claude Code. Paste it into ChatGPT or Claude along with your draft, or keep it next to your editor.
 
 **Use it for:** landing pages, ads, emails, cold outreach, social posts, video scripts, sales pages, popups, and bios.
 **Skip it for:** reports, audits, and other analysis, where careful qualification is accuracy, not weakness.
