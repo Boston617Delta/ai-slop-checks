@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Slop Check"
+  short_description: "Flag AI writing patterns in marketing copy and rewrite them"
+  default_prompt: "Use $ai-slop-check to check this draft, quote each flagged sentence, and suggest a rewrite that keeps my meaning."
