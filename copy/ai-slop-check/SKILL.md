@@ -58,9 +58,21 @@ Each line should add new information or move the argument forward. If two consec
 
 **5. The "imagine" opener.** "Imagine waking up to a calendar full of booked calls." Open with a fact, a direct challenge, or a specific number.
 
+**6. Rule-of-three padding.** A three-item list inside one sentence where the third item is filler added for rhythm ("faster, smarter, and more effective"). Every item must carry new information; if the third adds nothing, cut the list to two. The checker can't judge this one, so read for it.
+
+**7. The one-word question answered on the spot.** "The result? Twice the calls." It's the rhetorical opener at sentence scale. State the result directly. The checker flags it under `rhetorical`.
+
+**8. "Here's" openers.** "Here's why that matters," "Here's the deal," "Here's what happened." Say the thing instead of announcing it.
+
+**9. "That's the real X" closers.** A closing line that crowns the point as the "real" one ("That's the real cost"). End on the specific fact.
+
 ## Filler transitions
 
-Cut or replace: "Let's dive in," "Here's the thing," "At the end of the day," "In today's fast-paced digital world," "Whether you're a [X] or a [Y]," "More on that later," "But wait, there's more."
+Cut or replace: "Let's dive in," "Here's the thing," "At the end of the day," "In today's fast-paced digital world," "Whether you're a [X] or a [Y]," "More on that later," "But wait, there's more," "As the world continues to evolve," "In today's ever-changing landscape," "No fluff," "Shouting into the void."
+
+**Reveal and honesty interjections.** Stock lines that promise a hidden truth ("Here's what nobody tells you"), honesty markers ("And honestly," "To be honest," "Truth is"), and realization setups ("Then I realized," "That's when it hit me"). Make the claim and let the proof carry it. This targets the stock phrasing, not a hook that withholds a specific answer ("the SEO tool you're not using, but should be").
+
+**Leaked assistant phrasing.** "As an AI language model," "Certainly!," "Great question," "I hope this helps." Search anything that came out of a chat tool for these.
 
 ## Hedging (persuasive copy only)
 
@@ -83,7 +95,7 @@ Patterns a reader flagged as "I would never say this." Treat each as a pattern, 
 
 ## Buzzwords
 
-Replace with what actually happens: delve, seamless, unlock, unleash, elevate, leverage, robust, empower, streamline, game-changing, revolutionize, transformative, tapestry, testament to, unparalleled, supercharge, effortless, cutting-edge, world-class, holistic, synergy, journey, realm, landscape, embark, curated, pivotal, foster.
+Replace with what actually happens: delve, seamless, unlock, unleash, elevate, leverage, robust, empower, streamline, game-changing, revolutionize, transformative, tapestry, testament to, unparalleled, supercharge, effortless, cutting-edge, world-class, holistic, synergy, journey, realm, landscape, embark, curated, pivotal, foster, quietly, grounded, and navigate used as a metaphor. Title templates count too: "From X to Y" and "Master X in N days." Each is fine when it's the literal, plainest choice (a real price range from $500 to $900), so a hit means review the sentence and rewrite it, not swap in a synonym.
 
 ## Proof
 

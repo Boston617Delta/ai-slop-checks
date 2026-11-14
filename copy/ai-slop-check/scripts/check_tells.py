@@ -37,11 +37,18 @@ RULES = {
     'exclaim':     'more than one exclamation point in the draft',
     'dense':       'paragraph of five or more sentences',
     'proof':       'number next to clients/leads/customers: verify, and never publish raw client counts',
+    'here-opener': 'sentence opens with "Here\'s" / "Here is" / "Here are" to announce what comes next',
+    'real-closer': '"That\'s the real X" line crowning the point',
+    'reveal':      'stock reveal or honesty interjection ("what nobody tells you", "honestly", "then I realized")',
+    'assistant':   'leaked chatbot phrasing ("as an AI language model", "I hope this helps")',
+    'title-template': '"From X to Y" title or "Master X in N days" template',
 }
 
 FILLER = [
     r"let'?s dive in", r"here'?s the thing", r"at the end of the day",
-    r"in today'?s (?:fast-paced|digital|ever-changing|modern)", r"whether you'?re an? .{1,40}? or an?\b",
+    r"in today'?s (?:fast-paced|digital|ever-changing|modern|dynamic|evolving)", r"whether you'?re an? .{1,40}? or an?\b",
+    r"as the world (?:continues to )?(?:evolve|evolves|change|changes)", r"no fluff",
+    r"shout(?:ing|s)? into the void",
     r"more on that later", r"but wait,? there'?s more", r"without further ado",
     r"say goodbye to", r"(?:that|this)(?:'s| is) where .{1,30}? comes? in", r"look no further",
     r"buckle up", r"the best part\??", r"the secret sauce", r"in a world where",
@@ -76,10 +83,32 @@ VOCAB = [
     r"next-level", r"cutting-edge", r"state-of-the-art", r"world-class", r"best-in-class",
     r"holistic", r"synerg(?:y|ies)", r"paradigm", r"bespoke", r"meticulous(?:ly)?",
     r"pivotal", r"foster(?:s|ed|ing)?", r"harness(?:es|ed|ing)? the power",
-    r"navigat(?:e|ing) the", r"ever-evolving", r"realm", r"landscape", r"embark(?:s|ed|ing)?",
+    r"navigat(?:e|es|ed|ing) (?:the|your|this|these|today'?s|an?)", r"ever-evolving", r"realm", r"landscape",
+    r"embark(?:s|ed|ing)?",
     r"journey", r"curated", r"myriad", r"plethora", r"deep dive", r"level up",
     r"it'?s (?:important|worth) (?:to note|noting)", r"underscores?",
+    r"quietly", r"grounded",
 ]
+
+# Stock reveal and honesty interjections. Bans the phrasing, not a hook that
+# withholds a specific answer ("the SEO tool you're not using, but should be").
+REVEAL = [
+    r"what (?:nobody|no one) (?:tells you|talks about|is talking about|will tell you)",
+    r"the secret (?:nobody|no one)", r"(?:nobody|no one) (?:is )?talking about",
+    r"honestly", r"to be honest", r"truth is", r"then i realized",
+    r"that'?s when it (?:hit|clicked for) me", r"it hit me",
+]
+
+ASSISTANT = [
+    r"as an ai (?:language )?model", r"as an ai assistant", r"as a (?:large )?language model",
+    r"i hope this helps", r"great question", r"i'?m (?:just )?an ai(?: model)?",
+]
+
+MASTER_TEMPLATE = re.compile(
+    r"\bmaster(?:ing)? .{1,40}? in (?:\d+|one|two|three|five|seven|ten|thirty) "
+    r"(?:days?|weeks?|hours?|minutes?|steps?)\b", re.I)
+# "From X to Y" in a title. A money or number range ("from $500 to $900") is fine.
+FROM_TO_TEMPLATE = re.compile(r"\bfrom (?![$\d])[\w'-]+(?: [\w'-]+){0,4} to\b", re.I)
 
 CONTRAST = [
     r"\bnot just\b", r"\bmore than just\b", r"\bnot only\b.{0,60}\bbut\b",
@@ -106,6 +135,7 @@ def compile_list(pats, flags=re.I):
 FILLER_RE, HEDGE_RE, VOCAB_RE, CONTRAST_RE = (
     compile_list(FILLER), compile_list(HEDGE), compile_list(VOCAB),
     [re.compile(p, re.I) for p in CONTRAST])
+REVEAL_RE, ASSISTANT_RE = compile_list(REVEAL), compile_list(ASSISTANT)
 REJECTED_RE = [(re.compile(p, re.I), label) for p, label in REJECTED]
 
 
@@ -247,6 +277,23 @@ def audit(lines, skip):
                 break
         if re.match(r"\s*imagine\b", low):
             add('imagine', line_no, s)
+        if re.match(r"\s*here(?:'s| is| are)\b", low) and not re.match(r"\s*here'?s the thing\b", low):
+            add('here-opener', line_no, s)
+        if re.search(r"\b(?:that|this)(?:'s| is) the real\b", low):
+            add('real-closer', line_no, s)
+        for rx in REVEAL_RE:
+            m = rx.search(low)
+            if m:
+                add('reveal', line_no, s, m.group(0))
+                break
+        m = next((rx.search(low) for rx in ASSISTANT_RE if rx.search(low)), None)
+        if m or re.match(r"\s*certainly[!,.]", low):
+            add('assistant', line_no, s, m.group(0) if m else 'certainly')
+        if MASTER_TEMPLATE.search(s):
+            add('title-template', line_no, s, '"Master X in N days"')
+        elif FROM_TO_TEMPLATE.search(s) and (
+                is_heading or (low.startswith('from ') and len(words(s)) <= 10)):
+            add('title-template', line_no, s, '"From X to Y"')
         for m in PROOF.finditer(s):
             add('proof', line_no, s, m.group(0))
 
@@ -276,7 +323,8 @@ def audit(lines, skip):
                     or max(len(words(s1)), len(words(s2))) <= 8):
                 add('echo', l2, f'{s1} / {s2}', f'both open with "{w1}"')
             if s1.endswith('?') and len(words(s1)) <= 9 and not s2.endswith('?'):
-                add('rhetorical', l1, f'{s1} / {s2}')
+                add('rhetorical', l1, f'{s1} / {s2}',
+                    'one-word question answered on the spot' if len(words(s1)) <= 3 else '')
         # Short sentences in a row; list items and list intros don't count.
         _, s, _, is_list = item
         if not is_list and not s.endswith(':') and len(words(s)) <= 6:
