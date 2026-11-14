@@ -12,6 +12,11 @@ A plain version of the `ai-slop-check` skill for anyone who doesn't use Claude C
 - [ ] **No three short sentences in a row.** Vary the rhythm.
 - [ ] **No rhetorical section openers.** "But what does that actually mean?" Use a statement instead.
 - [ ] **No "imagine" openers.** Open with a fact, a direct challenge, or a specific number.
+- [ ] **No rule-of-three padding.** If the third item in a list only adds rhythm ("faster, smarter, and more effective"), cut the list to two.
+- [ ] **No one-word questions answered on the spot.** "The result? Twice the calls." State the result.
+- [ ] **No "Here's" openers or "That's the real X" closers.** Say the thing, and end on the specific fact.
+- [ ] **No stock reveals or honesty lines.** "Here's what nobody tells you," "And honestly," "Then I realized." Make the claim and let the proof carry it.
+- [ ] **No leaked chatbot phrasing.** "As an AI language model," "Certainly!," "Great question," "I hope this helps."
 - [ ] **No filler transitions.** "Let's dive in," "Here's the thing," "At the end of the day," "In today's fast-paced digital world," "Whether you're a X or a Y," "More on that later," "But wait, there's more."
 - [ ] **No hedging in persuasive copy.** Cut "might," "could potentially," "in many cases," "often," and "usually," and back the claim with proof. If you can't prove it, cut it. Regulated claims (medical, legal, financial, insurance) keep the qualification their rules require.
 - [ ] **No emoji** unless the platform expects them.

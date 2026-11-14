@@ -31,7 +31,7 @@ Then ask it to "run an AI slop check on this draft" or "review this page for AI 
 
 ## The copy skill's scripts
 
-- `scripts/check_tells.py` flags the mechanical patterns (repetition, false contrasts, staccato runs, filler, buzzwords, colons, em dashes, arrows) with line numbers. Python standard library only, no network.
+- `scripts/check_tells.py` flags the mechanical patterns (repetition, false contrasts, staccato runs, filler, stock reveals, leaked chatbot phrasing, buzzwords, colons, em dashes, arrows) with line numbers. Python standard library only, no network.
 - `scripts/second_pass.sh` hands a draft to a different model family for an edit, Codex for a Claude draft or Claude for a ChatGPT draft, because a model doesn't hear its own habits. Without the other CLI installed it prints a prompt to paste instead.
 - `scripts/detect_ai.sh` scores a draft with [Desklib's AI-text detector](https://huggingface.co/desklib/ai-text-detector-v1.01) for the whole draft, each section and each long paragraph. It needs [uv](https://docs.astral.sh/uv/); the first run builds a Python venv and downloads the model (about 1.7 GB), and later runs work offline. Treat the score as a weak signal. A low score never clears a draft.
 

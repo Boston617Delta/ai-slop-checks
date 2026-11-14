@@ -6,10 +6,14 @@ Rewrite any sentence that does one of these:
 - Stacks three short sentences in a row. Vary the length, and never fragment one thought into pieces.
 - Opens a section with a rhetorical question it answers in the next line.
 - Opens with "Imagine..."
-- Uses filler such as "Here's the thing," "Let's dive in," "At the end of the day," "Whether you're an X or a Y," "That's where X comes in."
+- Pads a list with a third item that adds nothing ("faster, smarter, and more effective").
+- Asks a one-word question and answers it immediately ("The result? Twice the calls.").
+- Opens with "Here's..." to announce what comes next, or closes with "That's the real X."
+- Uses filler such as "Here's the thing," "Let's dive in," "At the end of the day," "Whether you're an X or a Y," "That's where X comes in," "As the world continues to evolve," "No fluff," "Shouting into the void."
+- Uses a stock reveal or honesty interjection ("Here's what nobody tells you," "And honestly," "Truth is," "Then I realized"), or leaked chatbot phrasing ("As an AI language model," "Certainly!," "I hope this helps").
 - Hedges with "might," "could potentially," "often," "usually," "in many cases," unless the claim is medical, legal, financial or insurance, where the qualification stays.
 - Reassures the reader that something is easy, simple or "only takes" a few minutes, announces what's coming ("I want to show you"), denies an objection nobody raised, uses a folksy justification ("the boring way," "which is exactly why"), invents a label ("the lightweight version"), or gives fake precision ("in ten seconds").
-- Uses buzzwords such as delve, seamless, unlock, elevate, leverage, robust, journey, landscape, transformative, game-changing.
+- Uses buzzwords such as delve, seamless, unlock, elevate, leverage, robust, journey, landscape, transformative, game-changing, quietly, grounded, or navigate as a metaphor, or a "From X to Y" or "Master X in N days" title.
 - Uses a colon anywhere except to introduce a bulleted or numbered list directly underneath it, including in headings. Join the two halves into one sentence rather than splitting them into two short ones.
 - Uses an em dash, an arrow glyph in a CTA or link, emoji, or more than one exclamation point.
 
